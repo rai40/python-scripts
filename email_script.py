@@ -21,7 +21,7 @@ from email.mime.text import MIMEText
 
 def sendMail(to,bcc, subject, text,html, files=[],server="smtp.gmail.com"):
 	gmail_user = "rai.ehtisham@smsall.pk"
-	gmail_pwd = "admin999"
+	gmail_pwd = "yourpassword"
 	FROM = 'rai.ehtisham@smsall.pk'
 	assert type(to)==list
 	assert type(files)==list
