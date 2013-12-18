@@ -28,7 +28,7 @@ q = """SELECT mem.Cell_Number FROM new_corporate_db.corporate_main_corporate_mem
 		INNER JOIN new_corporate_db.corporate_main_member mem
 		ON (mem.id=cmem.FK_Member_ID)
 		WHERE cmem.FK_Corporation_ID=47 or cmem.FK_Corporation_ID=5"""
-db = MySQLdb.connect("65.98.23.42","smsall","UWI$m$@ll-2342","new_corporate_db" )
+db = MySQLdb.connect("65.98.23.42","username","password","new_corporate_db" )
 cursor = db.cursor()
 cursor.execute(q)
 data = cursor.fetchall()
