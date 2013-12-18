@@ -78,7 +78,7 @@ import os
 
 def sendMail(to, subject, text, files=[],server="smtp.gmail.com"):
 	gmail_user = "rai.ehtisham@smsall.pk"
-	gmail_pwd = "admin999"
+	gmail_pwd = "password"
 	FROM = 'rai.ehtisham@smsall.pk'
 	assert type(to)==list
 	assert type(files)==list
