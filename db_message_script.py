@@ -14,7 +14,7 @@ def format_number(line=''):
 print "Running SMS Sender..."
 def send_message(message="", from_no="8001", to_no='+923344156260', coding=0, priority='2'):
     try:
-	values = {'username' : 'smsall' , 'password' : 'smsall' , 'text' : message,'from': from_no, 'to' :to_no , 'priority' : priority , 'coding' : str(coding), 'charset' : 'utf-8'}
+	values = {'username' : 'uname' , 'password' : 'pwd' , 'text' : message,'from': from_no, 'to' :to_no , 'priority' : priority , 'coding' : str(coding), 'charset' : 'utf-8'}
 	rs=urllib2.urlopen(urllib2.Request('http://65.98.91.178:13013/cgi-bin/sendsms?' + urllib.urlencode(values))).read()
 	print to_no, from_no
 	sleep(0.0333)
